@@ -1,0 +1,137 @@
+uuid: 82506b79-a17f-4486-a609-6c97c6ff1024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  module:
+    - file
+    - link
+    - media
+    - media_library
+  theme:
+    - galvus_ds
+active_version: 74ff7a1f91a2f1d1
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 120
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Take a confident step in managing your type 2 diabetes'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        lead:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Clear information, everyday tips and support resources to help you have better conversations with your doctor.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+        primary_label:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Explore support resources'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        primary_url:
+          required: false
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: '#support'
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        secondary_label:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Read common questions'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        secondary_url:
+          required: false
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: '#faq'
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        image:
+          required: true
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+                svg_image: svg_image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜[␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}][␜entity:media:svg_image␝field_media_svg_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}]'
+          derived_schema_metadata: {  }
+        anchor_id:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: hero
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: Hero
+id: sdc.galvus_ds.hero
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:hero'

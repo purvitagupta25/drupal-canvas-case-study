@@ -1,0 +1,7 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<div{{ attributes.addClass('section-head') }}>
+  <h2>{{ heading }}</h2>
+  {% if intro %}
+    <p>{{ intro }}</p>
+  {% endif %}
+</div>

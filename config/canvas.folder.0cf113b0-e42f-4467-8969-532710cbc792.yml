@@ -1,0 +1,37 @@
+uuid: 0cf113b0-e42f-4467-8969-532710cbc792
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.galvus_ds.benefits_grid
+    - canvas.component.sdc.galvus_ds.card
+    - canvas.component.sdc.galvus_ds.cta
+    - canvas.component.sdc.galvus_ds.faq
+    - canvas.component.sdc.galvus_ds.faq_item
+    - canvas.component.sdc.galvus_ds.footer
+    - canvas.component.sdc.galvus_ds.header
+    - canvas.component.sdc.galvus_ds.hero
+    - canvas.component.sdc.galvus_ds.main_content
+    - canvas.component.sdc.galvus_ds.nav_link
+    - canvas.component.sdc.galvus_ds.resource_card
+    - canvas.component.sdc.galvus_ds.resources_grid
+    - canvas.component.sdc.galvus_ds.section
+    - canvas.component.sdc.galvus_ds.section_heading
+name: 'Galvus Design System'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.galvus_ds.benefits_grid
+  - sdc.galvus_ds.card
+  - sdc.galvus_ds.cta
+  - sdc.galvus_ds.faq
+  - sdc.galvus_ds.faq_item
+  - sdc.galvus_ds.footer
+  - sdc.galvus_ds.header
+  - sdc.galvus_ds.hero
+  - sdc.galvus_ds.main_content
+  - sdc.galvus_ds.nav_link
+  - sdc.galvus_ds.resource_card
+  - sdc.galvus_ds.resources_grid
+  - sdc.galvus_ds.section
+  - sdc.galvus_ds.section_heading

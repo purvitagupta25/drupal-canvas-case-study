@@ -1,0 +1,13 @@
+.faq-item {
+  background: var(--white);
+  border: var(--border-width) solid var(--line);
+  border-radius: var(--radius-faq);
+  margin-bottom: var(--space-12);
+  padding: var(--space-16) var(--space-20);
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  color: var(--navy);
+}
+.faq-item p { margin: var(--space-12) 0 0; }

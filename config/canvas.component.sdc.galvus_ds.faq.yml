@@ -1,0 +1,45 @@
+uuid: 71ab2a11-3362-4286-ac2b-ae1dbe68d442
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 38af69e684ecd8da
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 120
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Frequently asked questions'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        anchor_id:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: faq
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: Questions
+          description: 'Add FAQ item components here.'
+label: FAQ
+id: sdc.galvus_ds.faq
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:faq'

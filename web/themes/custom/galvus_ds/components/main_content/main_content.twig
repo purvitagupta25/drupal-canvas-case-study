@@ -1,0 +1,4 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<main{{ attributes.setAttribute('id', 'main').setAttribute('tabindex', '-1') }}>
+  {{ content }}
+</main>

@@ -1,0 +1,10 @@
+{% set attributes = attributes|default(create_attribute()) %}
+{% if anchor_id %}
+  {% set attributes = attributes.setAttribute('id', anchor_id|clean_id) %}
+{% endif %}
+<section{{ attributes.addClass(['faq', 'gds-section']) }}>
+  <div class="wrap">
+    <h2>{{ heading }}</h2>
+    {{ items }}
+  </div>
+</section>

@@ -1,0 +1,41 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Card
+status: stable
+group: Galvus Design System
+description: 'Benefit card with an approved icon, H3 title and short text. Matches .benefit in sample-input.html. Place inside a Benefits grid.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - icon
+    - title
+  properties:
+    icon:
+      type: string
+      title: Icon
+      enum:
+        - document
+        - heart
+        - calendar
+        - clock
+      meta:enum:
+        document: 'Document (clear information)'
+        heart: 'Heart (daily living)'
+        calendar: 'Calendar (doctor visits)'
+        clock: 'Clock (reminders)'
+      examples:
+        - document
+    title:
+      type: string
+      title: Title (H3)
+      maxLength: 80
+      examples:
+        - Clear, simple information
+    text:
+      type: string
+      title: Text
+      pattern: '(.|\r?\n)*'
+      examples:
+        - Plain-language guides that explain your treatment and what to expect.

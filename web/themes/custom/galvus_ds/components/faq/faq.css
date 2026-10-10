@@ -1,0 +1,5 @@
+.faq { background: var(--sky); }
+.faq h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--space-24);
+}

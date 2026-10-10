@@ -1,0 +1,13 @@
+.section-head {
+  max-width: var(--section-head-max);
+  margin-bottom: var(--space-44);
+}
+.section-head h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--space-12);
+}
+.section-head p {
+  margin: 0;
+  font-size: var(--font-size-intro);
+  color: var(--text-muted);
+}

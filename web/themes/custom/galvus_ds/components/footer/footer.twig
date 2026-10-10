@@ -1,0 +1,16 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<footer{{ attributes.addClass('site-footer') }}>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">{{ brand }}</div>
+      <nav aria-label="{{ 'Footer'|t }}">
+        <ul>
+          {{ links }}
+        </ul>
+      </nav>
+    </div>
+    {% for line in disclaimer_lines %}
+      <p class="disclaimer">{{ line }}</p>
+    {% endfor %}
+  </div>
+</footer>

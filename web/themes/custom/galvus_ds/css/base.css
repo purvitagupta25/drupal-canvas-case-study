@@ -1,0 +1,87 @@
+/**
+ * Element defaults and shared utilities (.wrap, .btn, .skip), ported from
+ * sample-input.html. Values come from tokens.css only.
+ */
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset);
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  line-height: var(--line-height-body);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--teal-dark); }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  color: var(--navy);
+  line-height: var(--line-height-heading);
+  margin: 0;
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--navy);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Skip link (rendered by templates/html.html.twig). */
+.skip { position: absolute; left: -999px; }
+.skip:focus {
+  left: var(--space-8);
+  top: var(--space-8);
+  background: var(--white);
+  padding: var(--space-10) var(--space-14);
+  z-index: var(--z-skip);
+  border-radius: var(--radius-skip);
+}
+
+/* Skip-link target; it should not show a focus ring when focused by the skip link. */
+#main:focus { outline: none; }
+
+.wrap {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--sun);
+  color: var(--text-on-sun);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--space-15) var(--space-28);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: transform var(--duration-fast), box-shadow var(--duration-fast);
+}
+.btn:hover {
+  transform: translateY(var(--hover-lift));
+  box-shadow: var(--shadow-button-hover);
+}
+.btn--small {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-button-small);
+}
+
+/* Shared vertical rhythm for full-width sections (main > section in the source). */
+.gds-section { padding: var(--section-padding) 0; }
+
+@media (max-width: 760px) {
+  .gds-section { padding: var(--section-padding-mobile) 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}

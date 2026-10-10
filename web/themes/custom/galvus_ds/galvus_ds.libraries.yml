@@ -1,0 +1,19 @@
+# Web fonts, same families/weights as sample-input.html. Fallback stacks are in
+# the --serif and --sans tokens (css/tokens.css).
+fonts:
+  css:
+    base:
+      'https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap':
+        type: external
+        minified: true
+
+# Design tokens + element defaults. Every SDC in this theme depends on this
+# library (see libraryOverrides in each *.component.yml), so tokens are present
+# wherever a component renders, including the Canvas editor preview.
+global:
+  css:
+    base:
+      css/tokens.css: {}
+      css/base.css: {}
+  dependencies:
+    - galvus_ds/fonts

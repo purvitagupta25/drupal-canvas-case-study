@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: kIuS7aUq1-kn8i65F9XIjvyCZYWoRu8rJpTNmU8ODXc
+default_source: drupalorg_jsonapi
+enabled_sources:
+  drupalorg_jsonapi: {  }
+allow_ui_install: true
+max_selections: 1

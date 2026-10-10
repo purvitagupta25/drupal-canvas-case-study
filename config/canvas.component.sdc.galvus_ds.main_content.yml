@@ -1,0 +1,21 @@
+uuid: b11b97bb-44a3-458f-ac77-52709840b2ad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 38f205ad095564e4
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Main content'
+          description: 'Holds the "Page content" marker.'
+label: 'Main content area'
+id: sdc.galvus_ds.main_content
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:main_content'

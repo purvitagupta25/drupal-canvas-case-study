@@ -1,0 +1,26 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: FAQ item
+status: stable
+group: Galvus Design System
+description: 'One question and answer using native <details>/<summary> (keyboard accessible, no JavaScript). Place inside the FAQ "Questions" slot.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - question
+    - answer
+  properties:
+    question:
+      type: string
+      title: Question
+      maxLength: 160
+      examples:
+        - What is Galvus used for?
+    answer:
+      type: string
+      title: Answer
+      pattern: '(.|\r?\n)*'
+      examples:
+        - Galvus is a prescription medicine used with diet and exercise in adults with type 2 diabetes. Your doctor will decide if it is right for you.

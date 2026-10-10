@@ -1,0 +1,43 @@
+uuid: 9e20ca00-bca7-43a1-b11f-4473d11e4e1e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: e2c4a8d2db88be1a
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 120
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'What you can find here'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        intro:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Practical help for every stage of your treatment, in one place.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Section heading'
+id: sdc.galvus_ds.section_heading
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:section_heading'

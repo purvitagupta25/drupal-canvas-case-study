@@ -1,0 +1,21 @@
+uuid: 65bea5c7-6617-49d0-a00d-21577d6891d6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 307e52f4da8afcc6
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        cards:
+          title: Cards
+          description: 'Add Card components here.'
+label: 'Benefits grid'
+id: sdc.galvus_ds.benefits_grid
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:benefits_grid'

@@ -1,0 +1,27 @@
+{% set attributes = attributes|default(create_attribute()) %}
+{% if anchor_id %}
+  {% set attributes = attributes.setAttribute('id', anchor_id|clean_id) %}
+{% endif %}
+<section{{ attributes.addClass('hero') }}>
+  <div class="wrap">
+    <div class="hero__content">
+      <h1>{{ heading }}</h1>
+      {% if lead %}
+        <p class="lead">{{ lead }}</p>
+      {% endif %}
+      {% if (primary_label and primary_url) or (secondary_label and secondary_url) %}
+        <div class="hero-actions">
+          {% if primary_label and primary_url %}
+            <a class="btn" href="{{ primary_url }}">{{ primary_label }}</a>
+          {% endif %}
+          {% if secondary_label and secondary_url %}
+            <a class="link" href="{{ secondary_url }}">{{ secondary_label }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    {% if image.src %}
+      <img src="{{ image.src }}" alt="{{ image.alt|default('') }}"{% if image.width %} width="{{ image.width }}"{% endif %}{% if image.height %} height="{{ image.height }}"{% endif %}>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galvus Patient Support | Living well with type 2 diabetes</title>
+<meta name="description" content="Sample AI-generated patient landing page (case study input). Public-inspiration content only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#12263f; --ink:#22313f; --teal:#0f8b8d; --teal-dark:#0b6b6d;
+    --mint:#e6f4f1; --sky:#f4f8fa; --line:#dbe6ea; --sun:#ffb703; --white:#fff;
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.65;background:var(--white);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:var(--teal-dark)}
+  h1,h2,h3{font-family:var(--serif);color:var(--navy);line-height:1.15;margin:0}
+  .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:10px 14px;z-index:99;border-radius:6px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  main > section{padding:88px 0}
+  .section-head{max-width:640px;margin-bottom:44px}
+  .section-head h2{font-size:clamp(1.75rem,3.2vw,2.4rem);margin-bottom:12px}
+  .section-head p{margin:0;font-size:1.05rem;color:#4a5b68}
+
+  /* Buttons */
+  .btn{display:inline-block;background:var(--sun);color:#1a1a1a;font-weight:600;padding:15px 28px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,183,3,.35)}
+  .btn.small{padding:10px 20px;font-size:.95rem}
+  :focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+
+  /* Header */
+  header.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--navy)}
+  .brand-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--teal),#0f5f7a);display:grid;place-items:center}
+  nav ul{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+  nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.97rem}
+  nav a:hover{color:var(--teal-dark)}
+
+  /* Hero */
+  .hero{background:radial-gradient(1200px 500px at 85% -10%,#cfeee9 0,transparent 60%),linear-gradient(180deg,var(--sky),var(--white));padding:72px 0 96px}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.2rem,4.6vw,3.5rem);letter-spacing:-.01em;margin-bottom:20px}
+  .hero .lead{font-size:1.15rem;color:#3b4c59;max-width:50ch;margin:0 0 32px}
+  .hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .hero-actions a.link{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:2px solid var(--teal)}
+  .hero img{width:100%;height:auto;border-radius:28px;box-shadow:0 30px 60px -20px rgba(18,38,63,.35)}
+
+  /* Benefits */
+  .benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .benefit{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px 24px}
+  .benefit .icon{width:48px;height:48px;border-radius:14px;background:var(--mint);display:grid;place-items:center;margin-bottom:18px}
+  .benefit h3{font-size:1.15rem;margin-bottom:8px}
+  .benefit p{margin:0;color:#4a5b68;font-size:.97rem}
+
+  /* FAQ */
+  .faq{background:var(--sky)}
+  .faq h2{font-size:clamp(1.75rem,3.2vw,2.4rem);margin-bottom:24px}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:8px;margin-bottom:12px;padding:16px 20px}
+  .faq summary{cursor:pointer;font-weight:600;color:var(--navy)}
+  .faq details p{margin:12px 0 0}
+
+  /* Resources */
+  .resources ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .resources li{border-radius:18px;padding:30px 28px;background:var(--mint);display:flex;flex-direction:column;gap:8px}
+  .resources li:nth-child(2){background:#e9eef8}
+  .resources li:nth-child(3){background:#fdf3d9}
+  .resources h3{font-size:1.25rem}
+  .resources p{margin:0 0 10px;color:#3f505d;flex:1}
+  .resources a{font-weight:600;text-decoration:none;color:var(--navy)}
+  .resources a::after{content:" \2192"}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg,#12263f,#0b5566);color:var(--white);text-align:center}
+  .cta h2{color:var(--white);font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px}
+  .cta p{max-width:56ch;margin:0 auto 30px;color:#d3e4ea;font-size:1.08rem}
+
+  /* Footer */
+  footer.site-footer{background:#0b1b2e;color:#b9c8d3;padding:48px 0 36px;font-size:.93rem}
+  footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid #20364d}
+  footer .brand{color:var(--white)}
+  footer ul{list-style:none;display:flex;gap:26px;flex-wrap:wrap;margin:0;padding:0}
+  footer a{color:#e6eef3;text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  footer .disclaimer{max-width:90ch;margin:0 0 10px}
+
+  @media (max-width:960px){
+    .benefits-grid{grid-template-columns:repeat(2,1fr)}
+    .resources ul{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    main > section{padding:64px 0}
+    .hero .wrap{grid-template-columns:1fr;gap:36px}
+    nav ul li:not(:last-child){display:none}
+    .benefits-grid{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>
+      </span>
+      Galvus Patient Support
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#benefits">What you'll find</a></li>
+        <li><a href="#faq">Questions</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a class="btn small" href="#join">Join the programme</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div>
+        <h1>Take a confident step in managing your type 2 diabetes</h1>
+        <p class="lead">Clear information, everyday tips and support resources to help you have better conversations with your doctor.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#support">Explore support resources</a>
+          <a class="link" href="#faq">Read common questions</a>
+        </div>
+      </div>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 460'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2314a3a0'/%3E%3Cstop offset='1' stop-color='%230f5f7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='560' height='460' rx='28' fill='url(%23g)'/%3E%3Ccircle cx='430' cy='110' r='90' fill='%23fff' fill-opacity='.12'/%3E%3Ccircle cx='110' cy='390' r='120' fill='%23fff' fill-opacity='.1'/%3E%3Ccircle cx='290' cy='210' r='62' fill='%23fff'/%3E%3Cpath d='M160 440c0-76 58-120 130-120s130 44 130 120z' fill='%23fff'/%3E%3Cpath d='M40 90h120l22-36 38 70 28-50 18 16h120' fill='none' stroke='%23ffb703' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+           alt="Illustration of a smiling person with a heartbeat line, representing patient support" width="560" height="460">
+    </div>
+  </section>
+
+  <!-- KEY BENEFITS -->
+  <section id="benefits">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What you can find here</h2>
+        <p>Practical help for every stage of your treatment, in one place.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b6b6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M9 8h6M9 12h6"/></svg></div>
+          <h3>Clear, simple information</h3>
+          <p>Plain-language guides that explain your treatment and what to expect.</p>
+        </div>
+        <div class="benefit">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b6b6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-5-3-8-6-8-10a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 4-3 7-8 10z"/></svg></div>
+          <h3>Daily living tips</h3>
+          <p>Practical ideas on meals, activity and routines that fit your life.</p>
+        </div>
+        <div class="benefit">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b6b6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+          <h3>Prepare for doctor visits</h3>
+          <p>Question lists and checklists so you get more from every appointment.</p>
+        </div>
+        <div class="benefit">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b6b6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></div>
+          <h3>Reminders and tracking</h3>
+          <p>Simple tools to help you remember your medicine and track how you feel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>What is Galvus used for?</summary>
+        <p>Galvus is a prescription medicine used with diet and exercise in adults with type 2 diabetes. Your doctor will decide if it is right for you.</p>
+      </details>
+      <details>
+        <summary>How should I take my medicine?</summary>
+        <p>Always take your medicine exactly as your doctor or pharmacist has told you. If you are unsure, ask them.</p>
+      </details>
+      <details>
+        <summary>What should I do if I miss a dose?</summary>
+        <p>Follow the instructions in your patient leaflet and speak to your doctor or pharmacist if you are not sure what to do.</p>
+      </details>
+      <details>
+        <summary>Can I stop taking it when I feel better?</summary>
+        <p>Do not stop or change your treatment without talking to your doctor first.</p>
+      </details>
+      <details>
+        <summary>Where can I report side effects?</summary>
+        <p>Talk to your doctor or pharmacist about any side effect. You can also report them through your national reporting system.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- SUPPORT RESOURCES -->
+  <section class="resources" id="support">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Support resources</h2>
+        <p>Free tools and guides to help you every day.</p>
+      </div>
+      <ul>
+        <li>
+          <h3>Patient guide</h3>
+          <p>Download a printable guide to living with type 2 diabetes.</p>
+          <a href="#">Download the guide</a>
+        </li>
+        <li>
+          <h3>Healthy eating planner</h3>
+          <p>Weekly meal ideas you can adapt with your care team.</p>
+          <a href="#">Open the planner</a>
+        </li>
+        <li>
+          <h3>Talk to a support advisor</h3>
+          <p>Get answers to non-medical questions about the programme.</p>
+          <a href="#">Contact support</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta" id="join">
+    <div class="wrap">
+      <h2>Ready to get started?</h2>
+      <p>Join the patient support programme to receive helpful tips and resources by email.</p>
+      <a class="btn" href="#">Join the programme</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Galvus Patient Support</div>
+      <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.</p>
+    <p class="disclaimer">&copy; 2026 Sample Pharma. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

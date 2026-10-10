@@ -1,0 +1,13 @@
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-22);
+}
+
+@media (max-width: 960px) {
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+}

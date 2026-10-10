@@ -1,0 +1,22 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Section
+status: stable
+group: Galvus Design System
+description: 'Full-width page section with the standard container and vertical spacing (main > section in sample-input.html). Holds a Section heading followed by a Benefits grid or Resources grid.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  properties:
+    anchor_id:
+      type: string
+      title: Section anchor ID
+      description: 'Optional in-page anchor used by navigation links, e.g. "benefits" or "support".'
+      maxLength: 40
+      examples:
+        - benefits
+slots:
+  content:
+    title: Section content
+    description: 'Section heading, then a Benefits grid or Resources grid.'

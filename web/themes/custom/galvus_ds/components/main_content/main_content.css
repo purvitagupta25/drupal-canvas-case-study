@@ -1,0 +1,2 @@
+/* Skip-link target: no focus ring when focused programmatically. */
+#main:focus { outline: none; }

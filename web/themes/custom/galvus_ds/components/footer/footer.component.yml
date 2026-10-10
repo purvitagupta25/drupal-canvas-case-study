@@ -1,0 +1,35 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Footer
+status: stable
+group: Galvus Design System
+description: 'Dark site footer with brand, footer links and disclaimer lines. Matches <footer class="site-footer"> in sample-input.html.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - brand
+    - disclaimer_lines
+  properties:
+    brand:
+      type: string
+      title: Brand name
+      maxLength: 60
+      examples:
+        - Galvus Patient Support
+    disclaimer_lines:
+      type: array
+      title: Disclaimer lines
+      description: 'Each line renders as its own paragraph.'
+      minItems: 1
+      items:
+        type: string
+        title: Line
+      examples:
+        - - This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.
+          - © 2026 Sample Pharma. All rights reserved.
+slots:
+  links:
+    title: Footer links
+    description: 'Add Navigation link components here.'

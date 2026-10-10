@@ -1,0 +1,125 @@
+uuid: 98bcd6c5-51fd-447f-946f-d0c96be29600
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.marker.page_content
+    - canvas.component.sdc.galvus_ds.footer
+    - canvas.component.sdc.galvus_ds.header
+    - canvas.component.sdc.galvus_ds.main_content
+    - canvas.component.sdc.galvus_ds.nav_link
+  module:
+    - link
+id: galvus_default
+label: 'Galvus default'
+description: 'Header, main landmark and footer for Galvus patient pages.'
+component_tree:
+  1eaa1f19-6034-474c-b25b-36b258196903:
+    uuid: 1eaa1f19-6034-474c-b25b-36b258196903
+    component_id: sdc.galvus_ds.header
+    component_version: e9fcf06d176cdb66
+    inputs:
+      brand_name: 'Galvus Patient Support'
+      nav_label: Main
+      cta_label: 'Join the programme'
+      cta_url:
+        uri: '#join'
+        options: {  }
+  b877440b-b0ba-4a4a-8e74-37db3a741259:
+    parent_uuid: 1eaa1f19-6034-474c-b25b-36b258196903
+    slot: nav_links
+    uuid: b877440b-b0ba-4a4a-8e74-37db3a741259
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: "What you'll find"
+      url:
+        uri: '#benefits'
+        options: {  }
+  36e81887-4c94-46ad-93aa-d3f3cdfeeef3:
+    parent_uuid: 1eaa1f19-6034-474c-b25b-36b258196903
+    slot: nav_links
+    uuid: 36e81887-4c94-46ad-93aa-d3f3cdfeeef3
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: Questions
+      url:
+        uri: '#faq'
+        options: {  }
+  1ce56ce4-1dbe-494b-be74-4c9e79b92bed:
+    parent_uuid: 1eaa1f19-6034-474c-b25b-36b258196903
+    slot: nav_links
+    uuid: 1ce56ce4-1dbe-494b-be74-4c9e79b92bed
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: Support
+      url:
+        uri: '#support'
+        options: {  }
+  456a7a8f-f5b1-4437-b0bd-2004539c8588:
+    uuid: 456a7a8f-f5b1-4437-b0bd-2004539c8588
+    component_id: sdc.galvus_ds.main_content
+    component_version: 38f205ad095564e4
+    inputs: {  }
+  8635a38e-3682-4787-9eef-0f73e8cc5533:
+    parent_uuid: 456a7a8f-f5b1-4437-b0bd-2004539c8588
+    slot: content
+    uuid: 8635a38e-3682-4787-9eef-0f73e8cc5533
+    component_id: marker.page_content
+    component_version: 3b12c0b99a6caecc
+    inputs: {  }
+  fbab233b-6a20-4dab-a796-923ad6744a98:
+    uuid: fbab233b-6a20-4dab-a796-923ad6744a98
+    component_id: sdc.galvus_ds.footer
+    component_version: 62928712b6622d04
+    inputs:
+      brand: 'Galvus Patient Support'
+      disclaimer_lines:
+        - 'This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.'
+        - '© 2026 Sample Pharma. All rights reserved.'
+  f808662d-694c-4a89-9503-5270b54f8826:
+    parent_uuid: fbab233b-6a20-4dab-a796-923ad6744a98
+    slot: links
+    uuid: f808662d-694c-4a89-9503-5270b54f8826
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: 'Privacy policy'
+      url:
+        uri: /privacy
+        options: {  }
+  4f57d4af-4f3d-49e8-9087-7f8033215dc8:
+    parent_uuid: fbab233b-6a20-4dab-a796-923ad6744a98
+    slot: links
+    uuid: 4f57d4af-4f3d-49e8-9087-7f8033215dc8
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: 'Terms of use'
+      url:
+        uri: /terms
+        options: {  }
+  e883a6cb-b639-4c01-bafb-c74001e2f697:
+    parent_uuid: fbab233b-6a20-4dab-a796-923ad6744a98
+    slot: links
+    uuid: e883a6cb-b639-4c01-bafb-c74001e2f697
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: 'Contact us'
+      url:
+        uri: /contact
+        options: {  }
+  879d2ea5-eb79-4125-a120-5813616b5457:
+    parent_uuid: fbab233b-6a20-4dab-a796-923ad6744a98
+    slot: links
+    uuid: 879d2ea5-eb79-4125-a120-5813616b5457
+    component_id: sdc.galvus_ds.nav_link
+    component_version: 312298f21ea3df9c
+    inputs:
+      label: Accessibility
+      url:
+        uri: /accessibility
+        options: {  }

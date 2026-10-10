@@ -1,0 +1,24 @@
+.resource-card {
+  border-radius: var(--radius-card);
+  padding: var(--space-30) var(--space-28);
+  background: var(--mint);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+.resource-card h3 { font-size: var(--font-size-h3-resource); }
+.resource-card p {
+  margin: 0 0 var(--space-10);
+  color: var(--text-resource);
+  flex: 1;
+}
+.resource-card a {
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  color: var(--navy);
+}
+/* Decorative arrow; the "/ ''" alt text keeps screen readers from announcing it. */
+.resource-card a::after {
+  content: " \2192";
+  content: " \2192" / "";
+}

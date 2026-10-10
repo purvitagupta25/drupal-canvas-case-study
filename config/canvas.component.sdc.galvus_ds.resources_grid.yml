@@ -1,0 +1,21 @@
+uuid: 0e5bc787-011b-4907-b862-60e9031f1e70
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 0b89e888d88a04fe
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: 'Resource cards'
+          description: 'Add Resource card components here.'
+label: 'Resources grid'
+id: sdc.galvus_ds.resources_grid
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:resources_grid'

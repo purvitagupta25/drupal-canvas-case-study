@@ -1,0 +1,29 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: FAQ
+status: stable
+group: Galvus Design System
+description: 'Frequently asked questions section on a light background with stacked expandable items. Matches <section class="faq"> in sample-input.html.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - heading
+  properties:
+    heading:
+      type: string
+      title: Heading (H2)
+      maxLength: 120
+      examples:
+        - Frequently asked questions
+    anchor_id:
+      type: string
+      title: Section anchor ID
+      maxLength: 40
+      examples:
+        - faq
+slots:
+  items:
+    title: Questions
+    description: 'Add FAQ item components here.'

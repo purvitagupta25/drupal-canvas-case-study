@@ -1,0 +1,12 @@
+name: 'Galvus Design System'
+type: theme
+description: 'Approved Galvus patient-site design system. Provides design tokens and Drupal Canvas-compatible Single Directory Components.'
+core_version_requirement: ^11
+base theme: false
+libraries:
+  - galvus_ds/global
+regions:
+  header: Header
+  highlighted: Highlighted
+  content: Content
+  footer: Footer

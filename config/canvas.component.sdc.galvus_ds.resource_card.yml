@@ -1,0 +1,73 @@
+uuid: 5654550c-6c8b-4427-95fb-94c145feb1dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+  theme:
+    - galvus_ds
+active_version: 6d61332db64dc6df
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 80
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Patient guide'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        text:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Download a printable guide to living with type 2 diabetes.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+        link_label:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Download the guide'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        link_url:
+          required: true
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: /patient-guide
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Resource card'
+id: sdc.galvus_ds.resource_card
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:resource_card'

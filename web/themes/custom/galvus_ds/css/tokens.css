@@ -1,0 +1,134 @@
+/**
+ * Galvus design tokens.
+ *
+ * Brand colors and font stacks keep the exact names and values of the :root
+ * variables in sample-input.html. Every other value (secondary colors,
+ * type scale, spacing, radii, shadows, layout) was extracted from the
+ * hard-coded values in that file's stylesheet so components can use tokens
+ * only.
+ *
+ * Note: CSS custom properties cannot be used inside @media conditions, so the
+ * two breakpoints (960px, 760px) are written literally in component CSS.
+ */
+:root {
+  /* Brand colors (sample-input.html :root) */
+  --navy: #12263f;
+  --ink: #22313f;
+  --teal: #0f8b8d;
+  --teal-dark: #0b6b6d;
+  --mint: #e6f4f1;
+  --sky: #f4f8fa;
+  --line: #dbe6ea;
+  --sun: #ffb703;
+  --white: #fff;
+
+  /* Font stacks (sample-input.html :root) */
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+
+  /* Secondary colors */
+  --text-muted: #4a5b68;
+  --text-lead: #3b4c59;
+  --text-resource: #3f505d;
+  --text-on-sun: #1a1a1a;
+  --brand-gradient-end: #0f5f7a;
+  --hero-glow: #cfeee9;
+  --resource-blue: #e9eef8;
+  --resource-sand: #fdf3d9;
+  --cta-gradient-end: #0b5566;
+  --cta-text: #d3e4ea;
+  --footer-bg: #0b1b2e;
+  --footer-text: #b9c8d3;
+  --footer-rule: #20364d;
+  --footer-link: #e6eef3;
+  --header-bg: rgba(255, 255, 255, .94);
+
+  /* Shadows */
+  --shadow-button-hover: 0 8px 20px rgba(255, 183, 3, .35);
+  --shadow-hero-image: 0 30px 60px -20px rgba(18, 38, 63, .35);
+
+  /* Type scale */
+  --font-size-h1: clamp(2.2rem, 4.6vw, 3.5rem);
+  --font-size-h2: clamp(1.75rem, 3.2vw, 2.4rem);
+  --font-size-h2-cta: clamp(1.8rem, 3.4vw, 2.6rem);
+  --font-size-brand: 1.25rem;
+  --font-size-h3-card: 1.15rem;
+  --font-size-h3-resource: 1.25rem;
+  --font-size-lead: 1.15rem;
+  --font-size-cta-text: 1.08rem;
+  --font-size-intro: 1.05rem;
+  --font-size-nav: .97rem;
+  --font-size-card-text: .97rem;
+  --font-size-button-small: .95rem;
+  --font-size-footer: .93rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-body: 1.65;
+  --line-height-heading: 1.15;
+  --letter-spacing-h1: -.01em;
+
+  /* Spacing (px values used in sample-input.html) */
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-15: 15px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-22: 22px;
+  --space-24: 24px;
+  --space-26: 26px;
+  --space-28: 28px;
+  --space-30: 30px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-44: 44px;
+  --space-48: 48px;
+  --space-56: 56px;
+
+  /* Radii */
+  --radius-skip: 6px;
+  --radius-faq: 8px;
+  --radius-brand-mark: 10px;
+  --radius-icon: 14px;
+  --radius-card: 18px;
+  --radius-hero-image: 28px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --container-max: 1120px;
+  --gutter: 24px;
+  --header-height: 72px;
+  --scroll-offset: 80px;
+  --section-padding: 88px;
+  --section-padding-mobile: 64px;
+  --hero-padding-top: 72px;
+  --hero-padding-bottom: 96px;
+  --footer-padding-top: 48px;
+  --footer-padding-bottom: 36px;
+  --section-head-max: 640px;
+  --measure-lead: 50ch;
+  --measure-cta: 56ch;
+  --measure-disclaimer: 90ch;
+  --hero-columns: 1.1fr 1fr;
+  --hero-glow-size: 1200px 500px;
+  --hero-glow-position: 85% -10%;
+  --brand-mark-size: 34px;
+  --icon-box-size: 48px;
+
+  /* Borders + effects */
+  --border-width: 1px;
+  --border-width-link: 2px;
+  --header-blur: 8px;
+
+  /* Focus + motion */
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 3px;
+  --duration-fast: .15s;
+  --hover-lift: -2px;
+  --z-header: 20;
+  --z-skip: 99;
+}

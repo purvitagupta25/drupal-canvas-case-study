@@ -1,0 +1,2 @@
+/* Link appearance is set by the parent (header nav / footer list). */
+.nav-link { list-style: none; }

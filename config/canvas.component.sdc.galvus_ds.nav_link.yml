@@ -1,0 +1,48 @@
+uuid: 22f5a2f4-534c-400b-adee-e0107c230962
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+  theme:
+    - galvus_ds
+active_version: 312298f21ea3df9c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        label:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: "What you'll find"
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        url:
+          required: true
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: '#benefits'
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Navigation link'
+id: sdc.galvus_ds.nav_link
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:nav_link'

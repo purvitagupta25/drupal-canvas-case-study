@@ -1,0 +1,67 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Hero
+status: stable
+group: Galvus Design System
+description: 'Page hero with H1, lead text, primary button, secondary text link and illustration. Matches <section class="hero"> in sample-input.html. Two columns above 760px, stacked below.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - heading
+    - image
+  properties:
+    heading:
+      type: string
+      title: Heading (H1)
+      maxLength: 120
+      examples:
+        - Take a confident step in managing your type 2 diabetes
+    lead:
+      type: string
+      title: Lead text
+      pattern: '(.|\r?\n)*'
+      examples:
+        - Clear information, everyday tips and support resources to help you have better conversations with your doctor.
+    primary_label:
+      type: string
+      title: Primary button label
+      maxLength: 40
+      examples:
+        - Explore support resources
+    primary_url:
+      type: string
+      format: uri-reference
+      title: Primary button URL
+      examples:
+        - '#support'
+    secondary_label:
+      type: string
+      title: Secondary link label
+      maxLength: 40
+      examples:
+        - Read common questions
+    secondary_url:
+      type: string
+      format: uri-reference
+      title: Secondary link URL
+      examples:
+        - '#faq'
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: 'Alternative text is required unless the image is purely decorative.'
+      examples:
+        - src: hero-illustration.svg
+          alt: 'Illustration of a smiling person with a heartbeat line, representing patient support'
+          width: 560
+          height: 460
+    anchor_id:
+      type: string
+      title: Section anchor ID
+      description: 'Optional in-page anchor, e.g. "hero".'
+      maxLength: 40
+      examples:
+        - hero

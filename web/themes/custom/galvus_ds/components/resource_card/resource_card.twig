@@ -1,0 +1,8 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<li{{ attributes.addClass('resource-card') }}>
+  <h3>{{ title }}</h3>
+  {% if text %}
+    <p>{{ text }}</p>
+  {% endif %}
+  <a href="{{ link_url }}">{{ link_label }}</a>
+</li>

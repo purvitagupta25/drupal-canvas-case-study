@@ -1,0 +1,15 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Resources grid
+status: stable
+group: Galvus Design System
+description: 'List of Resource card components: 3 columns, 1 column below 960px. Cards 1-3 get mint, blue and sand backgrounds. Matches the <section class="resources"> list in sample-input.html.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  properties: {}
+slots:
+  items:
+    title: Resource cards
+    description: 'Add Resource card components here.'

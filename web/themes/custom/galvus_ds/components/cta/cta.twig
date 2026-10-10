@@ -1,0 +1,13 @@
+{% set attributes = attributes|default(create_attribute()) %}
+{% if anchor_id %}
+  {% set attributes = attributes.setAttribute('id', anchor_id|clean_id) %}
+{% endif %}
+<section{{ attributes.addClass(['cta', 'gds-section']) }}>
+  <div class="wrap">
+    <h2>{{ heading }}</h2>
+    {% if text %}
+      <p>{{ text }}</p>
+    {% endif %}
+    <a class="btn" href="{{ button_url }}">{{ button_label }}</a>
+  </div>
+</section>

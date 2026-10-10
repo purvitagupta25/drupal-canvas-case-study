@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Page shell for the Galvus design system.
+ *
+ * Same as core's html.html.twig, but the skip link uses the design-system
+ * .skip style from sample-input.html.
+ */
+#}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body{{ attributes }}>
+    <a class="skip" href="#main">{{ 'Skip to main content'|t }}</a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

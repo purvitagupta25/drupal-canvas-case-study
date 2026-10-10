@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Fallback page layout for routes without a Canvas page template.
+ *
+ * Canvas pages use the "Galvus default" page template instead
+ * (Header, Main content area, Footer components), which renders the same
+ * <main id="main"> landmark targeted by the skip link in html.html.twig.
+ */
+#}
+{{ page.header }}
+<main id="main" tabindex="-1">
+  {{ page.highlighted }}
+  {{ page.content }}
+</main>
+{{ page.footer }}

@@ -1,0 +1,5 @@
+/* Vertical padding comes from the shared .gds-section rule in css/base.css
+   (88px, 64px below 760px), which FAQ and CTA also use. No background here:
+   the source sections are transparent, and setting one would override the FAQ
+   and CTA backgrounds (same specificity, later in the cascade).
+   This file intentionally has no rules. */

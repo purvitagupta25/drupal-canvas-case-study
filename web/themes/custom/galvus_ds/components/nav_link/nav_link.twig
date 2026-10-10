@@ -1,0 +1,2 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<li{{ attributes.addClass('nav-link') }}><a href="{{ url }}">{{ label }}</a></li>

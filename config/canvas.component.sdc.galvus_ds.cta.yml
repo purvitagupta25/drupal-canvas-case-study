@@ -1,0 +1,85 @@
+uuid: 8924176c-8b79-46e6-aa6d-552fe9e51fa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+  theme:
+    - galvus_ds
+active_version: 49c005325a9e70a3
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 120
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Ready to get started?'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        text:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Join the patient support programme to receive helpful tips and resources by email.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+        button_label:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Join the programme'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        button_url:
+          required: true
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: /join
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        anchor_id:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: join
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Call to action'
+id: sdc.galvus_ds.cta
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:cta'

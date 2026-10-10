@@ -1,0 +1,15 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Main content area
+status: stable
+group: Galvus Design System
+description: 'Page template only: the <main id="main"> landmark targeted by the skip link. Place it once in a Canvas page template, between Header and Footer, with the "Page content" marker inside. Do not use inside page content.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  properties: {}
+slots:
+  content:
+    title: Main content
+    description: 'Holds the "Page content" marker.'

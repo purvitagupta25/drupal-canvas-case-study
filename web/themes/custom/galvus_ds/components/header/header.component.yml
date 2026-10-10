@@ -1,0 +1,41 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Header
+status: stable
+group: Galvus Design System
+description: 'Sticky site header with brand, main navigation and a call-to-action button. Matches <header class="site-header"> in sample-input.html. Below 760px only the button stays visible, as in the source.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - brand_name
+  properties:
+    brand_name:
+      type: string
+      title: Brand name
+      maxLength: 60
+      examples:
+        - Galvus Patient Support
+    nav_label:
+      type: string
+      title: Navigation label (screen readers)
+      maxLength: 40
+      examples:
+        - Main
+    cta_label:
+      type: string
+      title: Button label
+      maxLength: 40
+      examples:
+        - Join the programme
+    cta_url:
+      type: string
+      format: uri-reference
+      title: Button URL
+      examples:
+        - '#join'
+slots:
+  nav_links:
+    title: Navigation links
+    description: 'Add "Navigation link" components here.'

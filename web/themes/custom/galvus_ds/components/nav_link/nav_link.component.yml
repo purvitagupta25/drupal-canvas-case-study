@@ -1,0 +1,26 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Navigation link
+status: stable
+group: Galvus Design System
+description: 'A single link list item. Use inside the Header "Navigation links" slot or the Footer "Footer links" slot; styling comes from the parent.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - label
+    - url
+  properties:
+    label:
+      type: string
+      title: Label
+      maxLength: 40
+      examples:
+        - What you'll find
+    url:
+      type: string
+      format: uri-reference
+      title: URL
+      examples:
+        - '#benefits'

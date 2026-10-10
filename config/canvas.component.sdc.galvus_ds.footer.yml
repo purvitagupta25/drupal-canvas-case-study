@@ -1,0 +1,48 @@
+uuid: 0e3fe649-42a5-4305-be0f-45f12a050d23
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 62928712b6622d04
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        brand:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 60
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Galvus Patient Support'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        disclaimer_lines:
+          required: true
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.'
+            -
+              value: '© 2026 Sample Pharma. All rights reserved.'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+    fallback_metadata:
+      slot_definitions:
+        links:
+          title: 'Footer links'
+          description: 'Add Navigation link components here.'
+label: Footer
+id: sdc.galvus_ds.footer
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:footer'

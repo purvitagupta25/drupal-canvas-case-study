@@ -1,0 +1,15 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Benefits grid
+status: stable
+group: Galvus Design System
+description: 'Grid of Card components: 4 columns, 2 below 960px, 1 below 760px. Matches .benefits-grid in sample-input.html.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  properties: {}
+slots:
+  cards:
+    title: Cards
+    description: 'Add Card components here.'

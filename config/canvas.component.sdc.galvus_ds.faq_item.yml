@@ -1,0 +1,43 @@
+uuid: b3b7d9f5-deb5-4c50-9241-977ae7f7038b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 57cfa9a81b6f6144
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        question:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 160
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'What is Galvus used for?'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        answer:
+          required: true
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Galvus is a prescription medicine used with diet and exercise in adults with type 2 diabetes. Your doctor will decide if it is right for you.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'FAQ item'
+id: sdc.galvus_ds.faq_item
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:faq_item'

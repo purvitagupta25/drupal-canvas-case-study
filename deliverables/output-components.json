@@ -1,0 +1,795 @@
+{
+    "_about": "Exported from the live Drupal database by scripts/export-component-tree.php. Not hand-written.",
+    "exported_at": "2026-10-10T13:30:06+00:00",
+    "drupal_version": "11.4.8",
+    "canvas_version": "1.12.0",
+    "page": {
+        "entity_type": "canvas_page",
+        "id": 1,
+        "uuid": "6cdd5aaa-e9a6-4700-8918-068f7214e5fb",
+        "title": "Living well with type 2 diabetes",
+        "status": true,
+        "revision_id": 3,
+        "page_template": "(site default: galvus_default)",
+        "url": "/page/1",
+        "component_count": 21,
+        "tree": [
+            {
+                "component_id": "sdc.galvus_ds.hero",
+                "uuid": "97e19307-f11d-4d48-bfe9-706a0339df2a",
+                "inputs": {
+                    "heading": "Take a confident step in managing your type 2 diabetes",
+                    "lead": "Clear information, everyday tips and support resources to help you have better conversations with your doctor.",
+                    "primary_label": "Explore support resources",
+                    "primary_url": {
+                        "uri": "#support",
+                        "options": []
+                    },
+                    "secondary_label": "Read common questions",
+                    "secondary_url": {
+                        "uri": "#faq",
+                        "options": []
+                    },
+                    "image": {
+                        "target_id": "1"
+                    },
+                    "anchor_id": "hero"
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.section",
+                "uuid": "eef851ae-2ae1-420b-a4c0-502d31f88095",
+                "inputs": {
+                    "anchor_id": "benefits"
+                },
+                "slots": {
+                    "content": [
+                        {
+                            "component_id": "sdc.galvus_ds.section_heading",
+                            "uuid": "dc09a325-7463-437a-bd8a-701ca6d2bdc1",
+                            "inputs": {
+                                "heading": "What you can find here",
+                                "intro": "Practical help for every stage of your treatment, in one place."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.benefits_grid",
+                            "uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                            "inputs": {},
+                            "slots": {
+                                "cards": [
+                                    {
+                                        "component_id": "sdc.galvus_ds.card",
+                                        "uuid": "1d4b7250-e039-4866-adff-71f0b225948e",
+                                        "inputs": {
+                                            "icon": "document",
+                                            "title": "Clear, simple information",
+                                            "text": "Plain-language guides that explain your treatment and what to expect."
+                                        }
+                                    },
+                                    {
+                                        "component_id": "sdc.galvus_ds.card",
+                                        "uuid": "b7181d2b-3154-4fa8-bd02-a29ef3e91331",
+                                        "inputs": {
+                                            "icon": "heart",
+                                            "title": "Daily living tips",
+                                            "text": "Practical ideas on meals, activity and routines that fit your life."
+                                        }
+                                    },
+                                    {
+                                        "component_id": "sdc.galvus_ds.card",
+                                        "uuid": "7df4a862-c51c-4ad6-8978-01394b588031",
+                                        "inputs": {
+                                            "icon": "calendar",
+                                            "title": "Prepare for doctor visits",
+                                            "text": "Question lists and checklists so you get more from every appointment."
+                                        }
+                                    },
+                                    {
+                                        "component_id": "sdc.galvus_ds.card",
+                                        "uuid": "ac5433c9-c98f-4f70-80b4-870e60fcb5bc",
+                                        "inputs": {
+                                            "icon": "clock",
+                                            "title": "Reminders and tracking",
+                                            "text": "Simple tools to help you remember your medicine and track how you feel."
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.faq",
+                "uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "inputs": {
+                    "heading": "Frequently asked questions",
+                    "anchor_id": "faq"
+                },
+                "slots": {
+                    "items": [
+                        {
+                            "component_id": "sdc.galvus_ds.faq_item",
+                            "uuid": "6d04d6a0-0c92-486e-8b28-3efbc044ce3d",
+                            "inputs": {
+                                "question": "What is Galvus used for?",
+                                "answer": "Galvus is a prescription medicine used with diet and exercise in adults with type 2 diabetes. Your doctor will decide if it is right for you."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.faq_item",
+                            "uuid": "87ac44aa-7c01-44cb-9643-848ebc1c90bc",
+                            "inputs": {
+                                "question": "How should I take my medicine?",
+                                "answer": "Always take your medicine exactly as your doctor or pharmacist has told you. If you are unsure, ask them."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.faq_item",
+                            "uuid": "cad7afe8-b1e5-41d0-8a45-cfe87b1ef788",
+                            "inputs": {
+                                "question": "What should I do if I miss a dose?",
+                                "answer": "Follow the instructions in your patient leaflet and speak to your doctor or pharmacist if you are not sure what to do."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.faq_item",
+                            "uuid": "37f64916-90db-44bb-bc8d-5ae0dec10e13",
+                            "inputs": {
+                                "question": "Can I stop taking it when I feel better?",
+                                "answer": "Do not stop or change your treatment without talking to your doctor first."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.faq_item",
+                            "uuid": "265c919d-727d-4f8c-ac45-6526a5708660",
+                            "inputs": {
+                                "question": "Where can I report side effects?",
+                                "answer": "Talk to your doctor or pharmacist about any side effect. You can also report them through your national reporting system."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.section",
+                "uuid": "963bbf1e-2852-455e-80aa-4055ad26e27d",
+                "inputs": {
+                    "anchor_id": "support"
+                },
+                "slots": {
+                    "content": [
+                        {
+                            "component_id": "sdc.galvus_ds.section_heading",
+                            "uuid": "c44266e3-aa2d-45f6-b0e3-5dd8eb32927c",
+                            "inputs": {
+                                "heading": "Support resources",
+                                "intro": "Free tools and guides to help you every day."
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.resources_grid",
+                            "uuid": "857abd1f-c2f3-4db0-9f9c-8033f4f582ed",
+                            "inputs": {},
+                            "slots": {
+                                "items": [
+                                    {
+                                        "component_id": "sdc.galvus_ds.resource_card",
+                                        "uuid": "5a99227e-3a66-4327-88e0-bbff458e3561",
+                                        "inputs": {
+                                            "title": "Patient guide",
+                                            "text": "Download a printable guide to living with type 2 diabetes.",
+                                            "link_label": "Download the guide",
+                                            "link_url": {
+                                                "uri": "/patient-guide",
+                                                "options": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "component_id": "sdc.galvus_ds.resource_card",
+                                        "uuid": "a2221618-d346-41ef-aad2-ea6d097038e1",
+                                        "inputs": {
+                                            "title": "Healthy eating planner",
+                                            "text": "Weekly meal ideas you can adapt with your care team.",
+                                            "link_label": "Open the planner",
+                                            "link_url": {
+                                                "uri": "/healthy-eating-planner",
+                                                "options": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "component_id": "sdc.galvus_ds.resource_card",
+                                        "uuid": "c6dba5d8-90ba-412a-b789-bfaf06667aca",
+                                        "inputs": {
+                                            "title": "Talk to a support advisor",
+                                            "text": "Get answers to non-medical questions about the programme.",
+                                            "link_label": "Contact support",
+                                            "link_url": {
+                                                "uri": "/contact",
+                                                "options": []
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.cta",
+                "uuid": "21e7e84b-5623-42e3-ab0e-3f59d7e6c10d",
+                "inputs": {
+                    "heading": "Ready to get started?",
+                    "text": "Join the patient support programme to receive helpful tips and resources by email.",
+                    "button_label": "Join the programme",
+                    "button_url": {
+                        "uri": "/join",
+                        "options": []
+                    },
+                    "anchor_id": "join"
+                }
+            }
+        ],
+        "stored_items": [
+            {
+                "parent_uuid": null,
+                "slot": null,
+                "uuid": "97e19307-f11d-4d48-bfe9-706a0339df2a",
+                "component_id": "sdc.galvus_ds.hero",
+                "component_version": "74ff7a1f91a2f1d1",
+                "inputs": {
+                    "heading": "Take a confident step in managing your type 2 diabetes",
+                    "lead": "Clear information, everyday tips and support resources to help you have better conversations with your doctor.",
+                    "primary_label": "Explore support resources",
+                    "primary_url": {
+                        "uri": "#support",
+                        "options": []
+                    },
+                    "secondary_label": "Read common questions",
+                    "secondary_url": {
+                        "uri": "#faq",
+                        "options": []
+                    },
+                    "image": {
+                        "target_id": "1"
+                    },
+                    "anchor_id": "hero"
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": null,
+                "slot": null,
+                "uuid": "eef851ae-2ae1-420b-a4c0-502d31f88095",
+                "component_id": "sdc.galvus_ds.section",
+                "component_version": "662e5205cfdff686",
+                "inputs": {
+                    "anchor_id": "benefits"
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "eef851ae-2ae1-420b-a4c0-502d31f88095",
+                "slot": "content",
+                "uuid": "dc09a325-7463-437a-bd8a-701ca6d2bdc1",
+                "component_id": "sdc.galvus_ds.section_heading",
+                "component_version": "e2c4a8d2db88be1a",
+                "inputs": {
+                    "heading": "What you can find here",
+                    "intro": "Practical help for every stage of your treatment, in one place."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "eef851ae-2ae1-420b-a4c0-502d31f88095",
+                "slot": "content",
+                "uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                "component_id": "sdc.galvus_ds.benefits_grid",
+                "component_version": "307e52f4da8afcc6",
+                "inputs": [],
+                "label": null
+            },
+            {
+                "parent_uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                "slot": "cards",
+                "uuid": "1d4b7250-e039-4866-adff-71f0b225948e",
+                "component_id": "sdc.galvus_ds.card",
+                "component_version": "aab93fbf03327787",
+                "inputs": {
+                    "icon": "document",
+                    "title": "Clear, simple information",
+                    "text": "Plain-language guides that explain your treatment and what to expect."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                "slot": "cards",
+                "uuid": "b7181d2b-3154-4fa8-bd02-a29ef3e91331",
+                "component_id": "sdc.galvus_ds.card",
+                "component_version": "aab93fbf03327787",
+                "inputs": {
+                    "icon": "heart",
+                    "title": "Daily living tips",
+                    "text": "Practical ideas on meals, activity and routines that fit your life."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                "slot": "cards",
+                "uuid": "7df4a862-c51c-4ad6-8978-01394b588031",
+                "component_id": "sdc.galvus_ds.card",
+                "component_version": "aab93fbf03327787",
+                "inputs": {
+                    "icon": "calendar",
+                    "title": "Prepare for doctor visits",
+                    "text": "Question lists and checklists so you get more from every appointment."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "9dcde3ba-b565-448e-a548-e1e2f3dbeb30",
+                "slot": "cards",
+                "uuid": "ac5433c9-c98f-4f70-80b4-870e60fcb5bc",
+                "component_id": "sdc.galvus_ds.card",
+                "component_version": "aab93fbf03327787",
+                "inputs": {
+                    "icon": "clock",
+                    "title": "Reminders and tracking",
+                    "text": "Simple tools to help you remember your medicine and track how you feel."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": null,
+                "slot": null,
+                "uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "component_id": "sdc.galvus_ds.faq",
+                "component_version": "38af69e684ecd8da",
+                "inputs": {
+                    "heading": "Frequently asked questions",
+                    "anchor_id": "faq"
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "slot": "items",
+                "uuid": "6d04d6a0-0c92-486e-8b28-3efbc044ce3d",
+                "component_id": "sdc.galvus_ds.faq_item",
+                "component_version": "57cfa9a81b6f6144",
+                "inputs": {
+                    "question": "What is Galvus used for?",
+                    "answer": "Galvus is a prescription medicine used with diet and exercise in adults with type 2 diabetes. Your doctor will decide if it is right for you."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "slot": "items",
+                "uuid": "87ac44aa-7c01-44cb-9643-848ebc1c90bc",
+                "component_id": "sdc.galvus_ds.faq_item",
+                "component_version": "57cfa9a81b6f6144",
+                "inputs": {
+                    "question": "How should I take my medicine?",
+                    "answer": "Always take your medicine exactly as your doctor or pharmacist has told you. If you are unsure, ask them."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "slot": "items",
+                "uuid": "cad7afe8-b1e5-41d0-8a45-cfe87b1ef788",
+                "component_id": "sdc.galvus_ds.faq_item",
+                "component_version": "57cfa9a81b6f6144",
+                "inputs": {
+                    "question": "What should I do if I miss a dose?",
+                    "answer": "Follow the instructions in your patient leaflet and speak to your doctor or pharmacist if you are not sure what to do."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "slot": "items",
+                "uuid": "37f64916-90db-44bb-bc8d-5ae0dec10e13",
+                "component_id": "sdc.galvus_ds.faq_item",
+                "component_version": "57cfa9a81b6f6144",
+                "inputs": {
+                    "question": "Can I stop taking it when I feel better?",
+                    "answer": "Do not stop or change your treatment without talking to your doctor first."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "28082dac-3192-4e7d-bfae-ae1dddf9866e",
+                "slot": "items",
+                "uuid": "265c919d-727d-4f8c-ac45-6526a5708660",
+                "component_id": "sdc.galvus_ds.faq_item",
+                "component_version": "57cfa9a81b6f6144",
+                "inputs": {
+                    "question": "Where can I report side effects?",
+                    "answer": "Talk to your doctor or pharmacist about any side effect. You can also report them through your national reporting system."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": null,
+                "slot": null,
+                "uuid": "963bbf1e-2852-455e-80aa-4055ad26e27d",
+                "component_id": "sdc.galvus_ds.section",
+                "component_version": "662e5205cfdff686",
+                "inputs": {
+                    "anchor_id": "support"
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "963bbf1e-2852-455e-80aa-4055ad26e27d",
+                "slot": "content",
+                "uuid": "c44266e3-aa2d-45f6-b0e3-5dd8eb32927c",
+                "component_id": "sdc.galvus_ds.section_heading",
+                "component_version": "e2c4a8d2db88be1a",
+                "inputs": {
+                    "heading": "Support resources",
+                    "intro": "Free tools and guides to help you every day."
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "963bbf1e-2852-455e-80aa-4055ad26e27d",
+                "slot": "content",
+                "uuid": "857abd1f-c2f3-4db0-9f9c-8033f4f582ed",
+                "component_id": "sdc.galvus_ds.resources_grid",
+                "component_version": "0b89e888d88a04fe",
+                "inputs": [],
+                "label": null
+            },
+            {
+                "parent_uuid": "857abd1f-c2f3-4db0-9f9c-8033f4f582ed",
+                "slot": "items",
+                "uuid": "5a99227e-3a66-4327-88e0-bbff458e3561",
+                "component_id": "sdc.galvus_ds.resource_card",
+                "component_version": "6d61332db64dc6df",
+                "inputs": {
+                    "title": "Patient guide",
+                    "text": "Download a printable guide to living with type 2 diabetes.",
+                    "link_label": "Download the guide",
+                    "link_url": {
+                        "uri": "/patient-guide",
+                        "options": []
+                    }
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "857abd1f-c2f3-4db0-9f9c-8033f4f582ed",
+                "slot": "items",
+                "uuid": "a2221618-d346-41ef-aad2-ea6d097038e1",
+                "component_id": "sdc.galvus_ds.resource_card",
+                "component_version": "6d61332db64dc6df",
+                "inputs": {
+                    "title": "Healthy eating planner",
+                    "text": "Weekly meal ideas you can adapt with your care team.",
+                    "link_label": "Open the planner",
+                    "link_url": {
+                        "uri": "/healthy-eating-planner",
+                        "options": []
+                    }
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": "857abd1f-c2f3-4db0-9f9c-8033f4f582ed",
+                "slot": "items",
+                "uuid": "c6dba5d8-90ba-412a-b789-bfaf06667aca",
+                "component_id": "sdc.galvus_ds.resource_card",
+                "component_version": "6d61332db64dc6df",
+                "inputs": {
+                    "title": "Talk to a support advisor",
+                    "text": "Get answers to non-medical questions about the programme.",
+                    "link_label": "Contact support",
+                    "link_url": {
+                        "uri": "/contact",
+                        "options": []
+                    }
+                },
+                "label": null
+            },
+            {
+                "parent_uuid": null,
+                "slot": null,
+                "uuid": "21e7e84b-5623-42e3-ab0e-3f59d7e6c10d",
+                "component_id": "sdc.galvus_ds.cta",
+                "component_version": "49c005325a9e70a3",
+                "inputs": {
+                    "heading": "Ready to get started?",
+                    "text": "Join the patient support programme to receive helpful tips and resources by email.",
+                    "button_label": "Join the programme",
+                    "button_url": {
+                        "uri": "/join",
+                        "options": []
+                    },
+                    "anchor_id": "join"
+                },
+                "label": null
+            }
+        ]
+    },
+    "page_template": {
+        "entity_type": "page_variant",
+        "id": "galvus_default",
+        "label": "Galvus default",
+        "is_site_default": true,
+        "component_count": 11,
+        "tree": [
+            {
+                "component_id": "sdc.galvus_ds.header",
+                "uuid": "1eaa1f19-6034-474c-b25b-36b258196903",
+                "inputs": {
+                    "brand_name": "Galvus Patient Support",
+                    "nav_label": "Main",
+                    "cta_label": "Join the programme",
+                    "cta_url": {
+                        "uri": "#join",
+                        "options": []
+                    }
+                },
+                "slots": {
+                    "nav_links": [
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "b877440b-b0ba-4a4a-8e74-37db3a741259",
+                            "inputs": {
+                                "label": "What you'll find",
+                                "url": {
+                                    "uri": "#benefits",
+                                    "options": []
+                                }
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "36e81887-4c94-46ad-93aa-d3f3cdfeeef3",
+                            "inputs": {
+                                "label": "Questions",
+                                "url": {
+                                    "uri": "#faq",
+                                    "options": []
+                                }
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "1ce56ce4-1dbe-494b-be74-4c9e79b92bed",
+                            "inputs": {
+                                "label": "Support",
+                                "url": {
+                                    "uri": "#support",
+                                    "options": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.main_content",
+                "uuid": "456a7a8f-f5b1-4437-b0bd-2004539c8588",
+                "inputs": {},
+                "slots": {
+                    "content": [
+                        {
+                            "component_id": "marker.page_content",
+                            "uuid": "8635a38e-3682-4787-9eef-0f73e8cc5533",
+                            "inputs": {}
+                        }
+                    ]
+                }
+            },
+            {
+                "component_id": "sdc.galvus_ds.footer",
+                "uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "inputs": {
+                    "brand": "Galvus Patient Support",
+                    "disclaimer_lines": [
+                        "This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.",
+                        "© 2026 Sample Pharma. All rights reserved."
+                    ]
+                },
+                "slots": {
+                    "links": [
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "f808662d-694c-4a89-9503-5270b54f8826",
+                            "inputs": {
+                                "label": "Privacy policy",
+                                "url": {
+                                    "uri": "/privacy",
+                                    "options": []
+                                }
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "4f57d4af-4f3d-49e8-9087-7f8033215dc8",
+                            "inputs": {
+                                "label": "Terms of use",
+                                "url": {
+                                    "uri": "/terms",
+                                    "options": []
+                                }
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "e883a6cb-b639-4c01-bafb-c74001e2f697",
+                            "inputs": {
+                                "label": "Contact us",
+                                "url": {
+                                    "uri": "/contact",
+                                    "options": []
+                                }
+                            }
+                        },
+                        {
+                            "component_id": "sdc.galvus_ds.nav_link",
+                            "uuid": "879d2ea5-eb79-4125-a120-5813616b5457",
+                            "inputs": {
+                                "label": "Accessibility",
+                                "url": {
+                                    "uri": "/accessibility",
+                                    "options": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "stored_items": [
+            {
+                "uuid": "1eaa1f19-6034-474c-b25b-36b258196903",
+                "component_id": "sdc.galvus_ds.header",
+                "component_version": "e9fcf06d176cdb66",
+                "inputs": {
+                    "brand_name": "Galvus Patient Support",
+                    "nav_label": "Main",
+                    "cta_label": "Join the programme",
+                    "cta_url": {
+                        "uri": "#join",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "1eaa1f19-6034-474c-b25b-36b258196903",
+                "slot": "nav_links",
+                "uuid": "b877440b-b0ba-4a4a-8e74-37db3a741259",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "What you'll find",
+                    "url": {
+                        "uri": "#benefits",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "1eaa1f19-6034-474c-b25b-36b258196903",
+                "slot": "nav_links",
+                "uuid": "36e81887-4c94-46ad-93aa-d3f3cdfeeef3",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Questions",
+                    "url": {
+                        "uri": "#faq",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "1eaa1f19-6034-474c-b25b-36b258196903",
+                "slot": "nav_links",
+                "uuid": "1ce56ce4-1dbe-494b-be74-4c9e79b92bed",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Support",
+                    "url": {
+                        "uri": "#support",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "uuid": "456a7a8f-f5b1-4437-b0bd-2004539c8588",
+                "component_id": "sdc.galvus_ds.main_content",
+                "component_version": "38f205ad095564e4",
+                "inputs": []
+            },
+            {
+                "parent_uuid": "456a7a8f-f5b1-4437-b0bd-2004539c8588",
+                "slot": "content",
+                "uuid": "8635a38e-3682-4787-9eef-0f73e8cc5533",
+                "component_id": "marker.page_content",
+                "component_version": "3b12c0b99a6caecc",
+                "inputs": []
+            },
+            {
+                "uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "component_id": "sdc.galvus_ds.footer",
+                "component_version": "62928712b6622d04",
+                "inputs": {
+                    "brand": "Galvus Patient Support",
+                    "disclaimer_lines": [
+                        "This page is for sample purposes only and does not replace advice from a healthcare professional. Always talk to your doctor or pharmacist about your treatment.",
+                        "© 2026 Sample Pharma. All rights reserved."
+                    ]
+                }
+            },
+            {
+                "parent_uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "slot": "links",
+                "uuid": "f808662d-694c-4a89-9503-5270b54f8826",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Privacy policy",
+                    "url": {
+                        "uri": "/privacy",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "slot": "links",
+                "uuid": "4f57d4af-4f3d-49e8-9087-7f8033215dc8",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Terms of use",
+                    "url": {
+                        "uri": "/terms",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "slot": "links",
+                "uuid": "e883a6cb-b639-4c01-bafb-c74001e2f697",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Contact us",
+                    "url": {
+                        "uri": "/contact",
+                        "options": []
+                    }
+                }
+            },
+            {
+                "parent_uuid": "fbab233b-6a20-4dab-a796-923ad6744a98",
+                "slot": "links",
+                "uuid": "879d2ea5-eb79-4125-a120-5813616b5457",
+                "component_id": "sdc.galvus_ds.nav_link",
+                "component_version": "312298f21ea3df9c",
+                "inputs": {
+                    "label": "Accessibility",
+                    "url": {
+                        "uri": "/accessibility",
+                        "options": []
+                    }
+                }
+            }
+        ]
+    }
+}

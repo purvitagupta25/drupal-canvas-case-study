@@ -1,0 +1,57 @@
+uuid: 106128fd-90ee-4960-90bb-6dfafb37464d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - galvus_ds
+active_version: aab93fbf03327787
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        icon:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: document
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        title:
+          required: true
+          field_type: string
+          field_storage_settings:
+            max_length: 80
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Clear, simple information'
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        text:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: 'Plain-language guides that explain your treatment and what to expect.'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+    fallback_metadata:
+      slot_definitions: {  }
+label: Card
+id: sdc.galvus_ds.card
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:card'

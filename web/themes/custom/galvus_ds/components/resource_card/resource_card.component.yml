@@ -1,0 +1,40 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Resource card
+status: stable
+group: Galvus Design System
+description: 'Support resource with H3 title, text and an arrow link. Matches the list items in <section class="resources"> of sample-input.html. Place inside a Resources grid.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - title
+    - link_label
+    - link_url
+  properties:
+    title:
+      type: string
+      title: Title (H3)
+      maxLength: 80
+      examples:
+        - Patient guide
+    text:
+      type: string
+      title: Text
+      pattern: '(.|\r?\n)*'
+      examples:
+        - Download a printable guide to living with type 2 diabetes.
+    link_label:
+      type: string
+      title: Link label
+      maxLength: 40
+      examples:
+        - Download the guide
+    link_url:
+      type: string
+      format: uri-reference
+      title: Link URL
+      # Source uses href="#", which Canvas rejects as an example URL.
+      examples:
+        - /patient-guide

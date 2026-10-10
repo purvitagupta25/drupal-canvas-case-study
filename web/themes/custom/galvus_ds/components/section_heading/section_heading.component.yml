@@ -1,0 +1,25 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Section heading
+status: stable
+group: Galvus Design System
+description: 'H2 with an intro paragraph, used above the benefits and resources grids. Matches .section-head in sample-input.html.'
+libraryOverrides:
+  dependencies:
+    - galvus_ds/global
+props:
+  type: object
+  required:
+    - heading
+  properties:
+    heading:
+      type: string
+      title: Heading (H2)
+      maxLength: 120
+      examples:
+        - What you can find here
+    intro:
+      type: string
+      title: Intro text
+      pattern: '(.|\r?\n)*'
+      examples:
+        - Practical help for every stage of your treatment, in one place.

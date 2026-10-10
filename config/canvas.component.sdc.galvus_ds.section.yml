@@ -1,0 +1,33 @@
+uuid: bdfabed5-85b1-4481-b40a-841a0eb8aa37
+langcode: en
+status: true
+dependencies:
+  theme:
+    - galvus_ds
+active_version: 662e5205cfdff686
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        anchor_id:
+          required: false
+          field_type: string
+          field_storage_settings:
+            max_length: 40
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: benefits
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Section content'
+          description: 'Section heading, then a Benefits grid or Resources grid.'
+label: Section
+id: sdc.galvus_ds.section
+provider: galvus_ds
+source: sdc
+source_local_id: 'galvus_ds:section'

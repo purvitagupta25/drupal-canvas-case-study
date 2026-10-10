@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Theme hooks for the Galvus design system.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_page_attachments_alter().
+ *
+ * Adds the same font preconnect hints as sample-input.html.
+ */
+function galvus_ds_page_attachments_alter(array &$attachments): void {
+  $hints = [
+    'galvus_ds_preconnect_fonts_api' => ['href' => 'https://fonts.googleapis.com'],
+    'galvus_ds_preconnect_fonts_static' => ['href' => 'https://fonts.gstatic.com', 'crossorigin' => TRUE],
+  ];
+  foreach ($hints as $key => $attributes) {
+    $attachments['#attached']['html_head'][] = [
+      [
+        '#tag' => 'link',
+        '#attributes' => ['rel' => 'preconnect'] + $attributes,
+      ],
+      $key,
+    ];
+  }
+}

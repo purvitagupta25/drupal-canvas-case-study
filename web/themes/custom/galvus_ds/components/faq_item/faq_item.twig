@@ -1,0 +1,5 @@
+{% set attributes = attributes|default(create_attribute()) %}
+<details{{ attributes.addClass('faq-item') }}>
+  <summary>{{ question }}</summary>
+  <p>{{ answer }}</p>
+</details>
